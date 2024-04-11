@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="calculator.html" class="active">Calculator</a>
+        <a href="profile.html">Profile</a>
+        <a href="tracker.html">Tracker</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Calculator</h1>
+      <p>Enter your daily travel details to calculate your carbon footprint.</p>
+      <form id="carbonCalculator">
+        <label for="startCity">Start City:</label>
+        <input
+          type="text"
+          id="startCity"
+          name="startCity"
+          placeholder="Enter start city"
+        />
+        <label for="startState">Start State:</label>
+        <input
+          type="text"
+          id="startState"
+          name="startState"
+          placeholder="Enter start state"
+        />
+
+        <label for="endCity">End City:</label>
+        <input
+          type="text"
+          id="endCity"
+          name="endCity"
+          placeholder="Enter end city"
+        />
+        <label for="endState">End State:</label>
+        <input
+          type="text"
+          id="endState"
+          name="endState"
+          placeholder="Enter end state"
+        />
+
+        <button type="button" id="calculateButton">Calculate</button>
+      </form>
+      <div id="result" style="display: flex">
+        <div id="startLocationWeather" style="flex: 1; padding: 10px"></div>
+        <div id="distanceInfo" style="flex: 1; padding: 10px"></div>
+        <div id="endLocationWeather" style="flex: 1; padding: 10px"></div>
+      </div>
+    </main>
+    <script src="test.js"></script>
+  </body>
+</html>

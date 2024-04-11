@@ -1,0 +1,27 @@
+{
+    "name": "carbon-footprint-calculator",
+    "version": "1.0.0",
+    "description": "A web application to calculate and track your carbon footprint.",
+    "main": "index.html",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview",
+        "start": "node server.js"
+    },
+    "keywords": [
+        "carbon",
+        "footprint",
+        "calculator",
+        "tracker"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "vite": "^2.6.4"
+    },
+    "dependencies": {
+        "express": "^4.19.2",
+        "node-fetch": "^3.3.2"
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Commute and Weather Info</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="calculator.html" class="active">Calculator</a>
+        <a href="profile.html">Profile</a>
+        <a href="tracker.html">Tracker</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Commute Info</h1>
+      <p>
+        Enter your start and end locations to get commute time and weather
+        details.
+      </p>
+      <form id="commuteForm">
+        <label for="startAddress">Start Address:</label>
+        <input
+          type="text"
+          id="startAddress"
+          name="startAddress"
+          placeholder="Enter full start address"
+          required
+        />
+
+        <label for="endAddress">End Address:</label>
+        <input
+          type="text"
+          id="endAddress"
+          name="endAddress"
+          placeholder="Enter full end address"
+          required
+        />
+
+        <button type="button" id="calculateCommute">Check Commute</button>
+      </form>
+      <div id="result"></div>
+    </main>
+    <script src="test.js"></script>
+  </body>
+</html>
